@@ -28,7 +28,7 @@ def render_map(map):
         elif map[i] == "2":
             sprite = yellow
         else:
-            raise "ouch"
+            sprite = blank  # let's render blank instead of failing
 
         im.paste(sprite, (x * 16, y*16))
 
